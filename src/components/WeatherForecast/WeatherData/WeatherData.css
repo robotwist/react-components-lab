@@ -1,0 +1,8 @@
+.weather-data {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+  }
+  .weather-data span {
+    font-weight: bold;
+  }

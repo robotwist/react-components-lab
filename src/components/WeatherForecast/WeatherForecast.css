@@ -1,15 +1,29 @@
-section {
-    display: flex;
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.weather-forecast div {
+  flex: 1 1 20%;
+  margin: 0 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.weather-forecast img {
+  max-width: 100px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .weather-forecast div {
+    flex: 1 1 45%; /* Adjust the percentage for smaller screens */
   }
-  
-  section .weather {
-    border: 1px solid #ccc;
-    flex: 1;
-    padding: 10px;
-    text-align: center;
+}
+
+@media (max-width: 480px) {
+  .weather-forecast div {
+    flex: 1 1 100%; /* Full width for very small screens */
   }
-  
-  .weather span {
-    font-weight: bold;
-  }
-  
+}
